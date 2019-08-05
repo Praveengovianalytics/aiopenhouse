@@ -1,6 +1,10 @@
 
 
 def resumetable(df):
+    """
+    :param df: Dataframe
+    :return: Summary information of the dataset
+    """
     print(f"Dataset Shape: {df.shape}")
     summary = pd.DataFrame(df.dtypes, columns=['dtypes'])
     summary = summary.reset_index()
